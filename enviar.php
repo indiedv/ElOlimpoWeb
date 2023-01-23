@@ -1,5 +1,5 @@
 	<?php  
-	$destino="info@elolimpo.net";
+	$destino="info@elolimpo.net";// your mail 
 	$nombre=$_POST["name"];
 	$apellido=$_POST["last"];
 	$correo=$_POST["mail"];
@@ -8,7 +8,7 @@
 	$mensaje=$_POST["mensaje"];
 	$contenido="Nombre: " . $nombre ."\nApellido: " . $apellido ."\nCorreo: " .$correo ."\nEmpresa: " .$empresa ."\nTelefono: " . $telefono ."\nMensaje: " . $mensaje;
 
-	mail($destino, "Mensaje de tu sitio web elolimpo.net",$contenido);
+	mail($destino, "Mensaje de tu sitio web elolimpo.net",$contenido);//your mail
 	header("Location:index.html");
 	?>
 	<!DOCTYPE html>
